@@ -1,5 +1,5 @@
 # Maze-Solver
-A DFS based Maze Solver
+A Depth-First-Search based Maze Solver
 
 Try with the following mazes
 
