@@ -47,6 +47,7 @@ def dfs(s0,s1,adjList,e0,e1,discovered):
 	
 
 fileName=input("Enter the name of image file: ")
+originalimage=cv2.imread(fileName)
 img=cv2.imread(fileName,cv2.IMREAD_GRAYSCALE)
 totalHeight,totalWidth=img.shape
 l=[]
@@ -226,25 +227,22 @@ columnpixel=s1*unitWidth+unitWidth//2
 for i in s:
 	if i=='l':
 		for k in range(unitWidth):
-			img[rowpixel,columnpixel]=128
+			originalimage[rowpixel,columnpixel]=[0,0,255]
 			columnpixel-=1
 	if i=='u':
 		for k in range(unitWidth):
-			img[rowpixel,columnpixel]=128
+			originalimage[rowpixel,columnpixel]=[0,0,255]
 			rowpixel-=1
 	if i=='r':
 		for k in range(unitWidth):
-			img[rowpixel,columnpixel]=128
+			originalimage[rowpixel,columnpixel]=[0,0,255]
 			columnpixel+=1
 	if i=='d':
 		for k in range(unitWidth):
-			img[rowpixel,columnpixel]=128
+			originalimage[rowpixel,columnpixel]=[0,0,255]
 			rowpixel+=1
-
-
-cv2.imshow('img',img)
-
+cv2.imshow('Solution',originalimage)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-cv2.imwrite('solution.png',img)
+cv2.imwrite('solution.png',originalimage)
 print('Solution of the maze is saved as solution.png')
