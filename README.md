@@ -6,6 +6,9 @@ Implemented a Maze-Solver to extract information from a given maze and transform
 
 ## Building graph from the maze
 
+### Original maze
+![](mazes/example3.png)
+
 ### Finding start and exit
 ![](plots/StartandExit.png)
 
