@@ -1,5 +1,5 @@
 # Maze-Solver
-A Depth-First-Search based Maze Solver
+A Maze Solver based on DFS(Depth-First-Search)
 
 ## Description
 Implemented a Maze-Solver to extract information from a given maze and transform the maze into a graph. Applied DFS from the start-node to find the path to end node while saving the whole search.
