@@ -19,8 +19,8 @@ Implemented a Maze-Solver to extract information from a given maze and transform
 ![](plots/GraphasMaze.png)
 
 ## Depth-First-Search on the Maze/Graph
-### Search
+### Search (saved-as-a-video-file)
 [![Watch the video](https://img.youtube.com/vi/o2ko0UPNpV0/hqdefault.jpg)](https://youtu.be/o2ko0UPNpV0)
 
-### Solution
+### Solution of the maze
 ![](plots/solution.png)
